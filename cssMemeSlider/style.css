@@ -2,3 +2,30 @@
   max-width: 100vw;
   background: lightgray;
 }
+
+.header {
+  height: 10vh;
+  color: white;
+  margin-left: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.main {
+  width: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  /*overflow: hidden;*/
+  height: 70vh;
+  display: flex;
+}
+
+.foto1,
+.foto2,
+.foto3,
+.foto4,
+.foto5,
+.foto6 {
+  height: 70vh;
+  width: 70vh;
+}
