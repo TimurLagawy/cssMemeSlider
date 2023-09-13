@@ -15,8 +15,8 @@
   width: 70vh;
   margin-left: auto;
   margin-right: auto;
-  /*overflow: hidden;*/
-  height: 70vh;
+  overflow: hidden;
+  height: 80vh;
   display: flex;
 }
 
@@ -28,4 +28,52 @@
 .foto6 {
   height: 70vh;
   width: 70vh;
+  border-radius: 5%;
+  display: none;
+}
+
+.footer {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  max-height: 10vh;
+}
+
+.image-text {
+  max-height: 10vh;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  margin-right: 10vw;
+  display: none;
+}
+
+.carousel {
+  display: flex;
+}
+
+.wrapper-text {
+  max-width: 30vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/*.carousel1:checked ~ .foto1,
+.carousel2:checked ~ .foto2,
+.carousel3:checked ~ .foto3,
+.carousel4:checked ~ .foto4,
+.carousel5:checked ~ .foto5,
+.carousel6:checked ~ .foto6 {
+  display: block;
+}*/
+
+.carousel1:checked + label,
+.carousel2:checked + label,
+.carousel3:checked + label,
+.carousel4:checked + label,
+.carousel5:checked + label,
+.carousel6:checked + label {
+  display: block;
 }
