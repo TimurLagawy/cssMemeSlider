@@ -26,10 +26,14 @@
 .foto4,
 .foto5,
 .foto6 {
+  display: none;
   height: 70vh;
   width: 70vh;
   border-radius: 5%;
-  display: none;
+}
+
+.space {
+  height: 5vh;
 }
 
 .footer {
@@ -47,11 +51,16 @@
   text-align: center;
   white-space: nowrap;
   margin-right: 10vw;
-  display: none;
+  /* display: none;*/
 }
 
 .carousel {
   display: flex;
+}
+
+input {
+  cursor: pointer;
+  margin: 1vh;
 }
 
 .wrapper-text {
@@ -59,21 +68,24 @@
   display: flex;
   overflow: hidden;
 }
-
-/*.carousel1:checked ~ .foto1,
-.carousel2:checked ~ .foto2,
-.carousel3:checked ~ .foto3,
-.carousel4:checked ~ .foto4,
-.carousel5:checked ~ .foto5,
-.carousel6:checked ~ .foto6 {
+/*
+.carousel1:checked ~ .main > .foto1,
+.carousel2:checked ~ .main > .foto2,
+.carousel3:checked ~ .main > .foto3,
+.carousel4:checked ~ .main > .foto4,
+.carousel5:checked ~ .main > .foto5,
+.carousel6:checked ~ .main > .foto6 {
   display: block;
+}
+/*.carousel-button input {
+  display: none;
 }*/
 
-.carousel1:checked + label,
-.carousel2:checked + label,
-.carousel3:checked + label,
-.carousel4:checked + label,
-.carousel5:checked + label,
-.carousel6:checked + label {
+#carousel1:checked ~ .carousel > .carousel1,
+#carousel2:checked ~ .carousel > .carousel2,
+#carousel3:checked ~ .carousel > .carousel3,
+#carousel4:checked ~ .carousel > .carousel4,
+#carousel5:checked ~ .carousel > .carousel5,
+#carousel6:checked ~ .carousel > .carousel6 {
   display: block;
 }
