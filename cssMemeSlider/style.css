@@ -81,11 +81,11 @@ input {
   display: none;
 }*/
 
-#carousel1:checked ~ .carousel > .carousel1,
+/*#carousel1:checked ~ .carousel > .carousel1,
 #carousel2:checked ~ .carousel > .carousel2,
 #carousel3:checked ~ .carousel > .carousel3,
 #carousel4:checked ~ .carousel > .carousel4,
 #carousel5:checked ~ .carousel > .carousel5,
 #carousel6:checked ~ .carousel > .carousel6 {
   display: block;
-}
+}*/
