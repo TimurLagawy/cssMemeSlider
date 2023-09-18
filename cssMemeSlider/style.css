@@ -14,20 +14,21 @@
 
 .main {
   width: 70vh;
-  height: 80vh;
-  overflow: hidden;
+  height: 86vh;
+  overflow-x: hidden;
   border: solid 0.5vh white;
   margin-left: auto;
   margin-right: auto;
+  scroll-margin: 0;
 }
 
 .carousel {
   display: flex;
-  max-width: 40vh;
+  max-width: 50vh;
   height: 4vh;
-  margin-top: 2%;
+  margin-top: 0vw;
   margin-left: 60vw;
-  z-index: 2;
+  background-color: gray;
 }
 
 .image-text {
@@ -35,14 +36,14 @@
   width: 3vh;
   cursor: pointer;
   background: aqua;
-  margin: 1vh;
   transition: all 1s ease;
-  border: solid black;
+  border: solid 2vh gray;
   border-radius: 50%;
 }
 
 .image-text:hover {
-  filter: brightness(50%);
+  background: antiquewhite;
+  /*filter: brightness(50%);*/
 }
 
 .carousel1,
@@ -60,7 +61,6 @@
 .foto4,
 .foto5,
 .foto6 {
-  width: 100%;
   height: 100%;
   width: calc(1 / 6 * 100%);
   transition: all 1s ease;
@@ -72,7 +72,8 @@
   display: flex;
 }
 
-.foto {
+.foto,
+.text {
   width: 70vh;
   height: 70vh;
 }
@@ -101,74 +102,38 @@
   margin-left: calc(-5 / 6 * 100%);
 }
 
-.wrapper-text {
-  display: flex;
-  width: 40vh;
-
-  overflow: hidden;
-}
-
-.text1,
-.text2,
-.text3,
-.text4,
-.text5,
-.text6 {
-  width: 100%;
-  height: 100%;
-  display: block;
-  white-space: nowrap;
+.text {
   height: 10vh;
-  transition: all 1s ease;
+  text-align: center;
+  color: white;
+  margin-top: 5vh;
 }
 
-.carousel1:checked ~ .wrapper-text > .text1 {
-  margin-top: 0%;
+@media (max-width: 900px) {
+  .carousel {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-.carousel2:checked ~ .wrapper-text > .text2 {
-  margin-top: -10vh;
-}
-.carousel3:checked ~ .wrapper-text > .text3 {
-  margin-top: -20vh;
-}
-.carousel4:checked ~ .wrapper-text > .text4 {
-  margin-top: -30vh;
-}
-.carousel5:checked ~ .wrapper-text > .text5 {
-  margin-top: -40vh;
-}
-.carousel6:checked ~ .wrapper-text > .text6 {
-  margin-top: -50vh;
-}
-/*
-.carousel1:checked + .image-text > .btn1,
-.carousel2:checked + .image-text > .btn2,
-.carousel3:checked + .image-text > .btn3,
-.carousel4:checked + .image-text > .btn4,
-.carousel5:checked + .image-text > .btn5,
-.carousel6:checked + .image-text > .btn6 {
-  background: red; 
-}
+@media (max-width: 700px) {
+  .main {
+    width: 70vw;
+    height: 86vw;
+  }
 
-.wrapper-text .text1,
-.wrapper-text .text2,
-.wrapper-text .text3,
-.wrapper-text .text4,
-.wrapper-text .text5,
-.wrapper-text .text6 {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  
+  .foto {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .foto-wrapper {
+    height: 70vw;
+  }
+
+  .text {
+    height: 10vw;
+    margin-top: 5vw;
+    text-align: left;
+    margin-left: 15vw;
+  }
 }
-
-
-.carousel1:checked ~ .wrapper-text .text1,
-.carousel2:checked ~ .wrapper-text .text2,
-.carousel3:checked ~ .wrapper-text .text3,
-.carousel4:checked ~ .wrapper-text .text4,
-.carousel5:checked ~ .wrapper-text .text5,
-.carousel6:checked ~ .wrapper-text .text6 {
-  opacity: 1; /* Задайте желаемую прозрачность */
-/* transform: translateY(0);  Отмените смещение текста 
-}*/
