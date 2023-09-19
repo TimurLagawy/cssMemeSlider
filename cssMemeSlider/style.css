@@ -28,7 +28,6 @@
   height: 4vh;
   margin-top: 0vw;
   margin-left: 60vw;
-  background-color: gray;
 }
 
 .image-text {
@@ -104,9 +103,10 @@
 
 .text {
   height: 10vh;
-  text-align: center;
+  text-align: left;
   color: white;
   margin-top: 5vh;
+  margin-left: 5vw;
 }
 
 @media (max-width: 900px) {
@@ -114,11 +114,57 @@
     margin-left: auto;
     margin-right: auto;
   }
-}
-@media (max-width: 700px) {
+
   .main {
     width: 70vw;
     height: 86vw;
+    border: solid 0.5vw white;
+  }
+
+  .carousel {
+    max-width: 50vw;
+    height: 4vw;
+  }
+
+  .image-text {
+    height: 3vw;
+    width: 3vw;
+    border: solid 2vw gray;
+  }
+
+  .foto-wrapper {
+    height: 70vw;
+  }
+
+  .foto,
+  .text {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .text {
+    height: 10vw;
+    margin-top: 5vw;
+  }
+
+  .space {
+    height: 12vw;
+  }
+
+  .foto1,
+  .foto2,
+  .foto3,
+  .foto4,
+  .foto5,
+  .foto6 {
+    display: grid;
+    justify-content: space-between;
+    height: 86vw;
+  }
+
+  .main {
+    width: 70vw;
+    height: 101vw;
   }
 
   .foto {
@@ -126,14 +172,31 @@
     height: 70vw;
   }
 
-  .foto-wrapper {
-    height: 70vw;
+  .text {
+    height: 5vw;
+    margin-top: 10vw;
   }
 
+  .carousel {
+    margin-top: -28vw;
+  }
+}
+
+@media (max-width: 860px) {
+  .space {
+    height: 5vw;
+  }
+}
+@media (max-width: 740px) {
+  .foto-wrapper {
+    height: 101vw;
+  }
+  .space {
+    height: 25vw;
+  }
   .text {
     height: 10vw;
-    margin-top: 5vw;
+    margin-top: 0vw;
     text-align: left;
-    margin-left: 15vw;
   }
 }
